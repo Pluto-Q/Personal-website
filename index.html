@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+	
+	
+	
+		<link href="css/animate.css" rel="stylesheet">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.textillate.js"></script>
+	
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -127,5 +135,49 @@
 
             } );
             </script>
+	
+	
+	
+
+<script>
+$(function () {
+	$('.text1').textillate({ in: { effect: 'rollIn' } });
+	$('.text2').textillate({
+		initialDelay: 1000, 	//设置动画开始时间
+		in: { effect: 'flipInX'	//设置动画名称
+		}
+	});
+	$('.text3').textillate({
+		initialDelay: 9000,
+		in: { effect: 'bounceInDown' }
+	});
+})
+
+</script>
+
+.text1,.text2,.text3 {visibility:hidden;}
+.text1,.text2 {color:#fff;color:#fff;}
+.text1 {margin:50px;text-align:center;font-size:30px;text-shadow:0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8);}
+.text2 {font-family:microsoft yahei;font-size:14px;line-height:24px;text-shadow:0.1em 0.1em 0.1em rgba(0, 0, 0, 0.8)}
+.text3 {font-family:microsoft yahei;text-align:center;font-size:36px;color:#900}
+</style>
+
+
+<div style="    width: 162px;">
+	<p class="text2">王者战绩：  <br>
+   发布客户数：10.5<br>
+   发布订单数：19<br>
+   新开订单：12<br>
+   升级单：7<br>
+   日均发布：1.8单<br>
+   日均制作：3.8单<br>
+   综合实力5月：TOP1<br>
+   评价：制作有点少<br>
+	   </p>
+	
+</div>
+	
+	
+	
 </body>
 </html>
